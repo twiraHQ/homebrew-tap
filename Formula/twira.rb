@@ -2,22 +2,22 @@ class Twira < Formula
   desc "Code intelligence engine for AI coding assistants"
   homepage "https://twira.com"
   license "LicenseRef-Proprietary"
-  version "2.1.1"
+  version "2.2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/TwiraHQ/twira/releases/download/v2.1.1/twira-v2.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "32d4a7410025d38f382ed778590ffb7aeb81aacff42884217e3b0fbfaf0ad79f"
+      url "https://github.com/TwiraHQ/twira/releases/download/v2.2.0/twira-v2.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "d8e714a5b72a3827339d4f2ad2ad8f55a537213f52e56f3fdb8119719b4ebb92"
     else
-      url "https://github.com/TwiraHQ/twira/releases/download/v2.1.1/twira-v2.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "d90e74a69ad531b451bcdc5a7fde69437b2c51061cdd10667d4808a77e53893b"
+      url "https://github.com/TwiraHQ/twira/releases/download/v2.2.0/twira-v2.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "8e9f249cd77a3b66bd8817b70cd53ca9ad95ba283c69bc6c9b129d66ebcb2e5f"
     end
   end
 
   on_linux do
     # Only x86_64 Linux is built (no aarch64-unknown-linux-gnu target).
-    url "https://github.com/TwiraHQ/twira/releases/download/v2.1.1/twira-v2.1.1-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "e813c75548443f64fe6b716946dc007fc335c9f6fe63fb80b8a9bf17d787fe0c"
+    url "https://github.com/TwiraHQ/twira/releases/download/v2.2.0/twira-v2.2.0-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "51fcaa7c3f549a23b067d41c8d75ea5e171ae7f51286f4fedb3501f18fd210df"
   end
 
   def install
